@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="La noche más aterradora ha llegado... ¿te atreves a entrar?">
+    <meta name="keywords" content="halloween, html, css, javascript">
     <meta name="author" content="May Calle">
     <title>La Noche de Halloween</title>
     
@@ -16,12 +17,15 @@
 </head>
 <body>
 
-    <!-- Puede no funcionar bien en navegadores modernos 
-        <audio id="ambiente-audio" src="sounds/horror-sounds.mp3" autoplay loop muted></audio> -->
+    <audio id="ambiente-audio" src="sounds/horror-sounds.mp3" loop></audio>
+    <audio id="risa-audio" src="sounds/risa-malefica.mp3" loop></audio>
     
+    <div id="overlay">
+        <h1 onclick="iniciar()">Haz clic para entrar</h1>
+    </div>
+
     <header>
         <h1>¡Bienvenido a la Noche de Halloween!</h1>
-        <p class="introduccion">Esta no es una página web común... Mientras exploras, ten cuidado. Algo acecha en la oscuridad...</p>
     </header>
 
     <nav>
@@ -32,10 +36,14 @@
         </ul>
     </nav>
 
-    <section>
-        <p class="advertencia">Si decides continuar, recuerda que este lugar está maldito. Solo los valientes sobreviven...</p>
-        <img src="images/sombra-tenebrosa.jpg" alt="Sombra tenebrosa" class="imagen-principal" id="imagen-principal" 
-        onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+    <section class="advertencia">
+        <h2>¡Advertencia!</h2>
+        <p>
+            Esta no es una página web común... Mientras exploras, ten cuidado. Algo acecha en la oscuridad...<br>
+            Si decides continuar, recuerda que este lugar está maldito. Solo los valientes sobreviven...
+        </p>
+        <img src="images/sombra-tenebrosa.jpg" alt="Sombra tenebrosa" id="imagen-principal" 
+             onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
     </section>
 
     <footer>
