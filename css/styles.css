@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    background-color: #0d0d0d;
+    color: #f1f1f1;
+    font-family: "Jolly Lodger", cursive, system-ui;
+    font-size: 12pt;
+    font-weight: 400;
+    font-style: normal; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('../images/fondo-oscuridad.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Encabezado principal */
+header {
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: "Nosifer", sans-serif;
+    color: rgb(128,0,0);   
+    font-size: 4rem;
+    text-shadow: 3px 3px 8px #000;
+    transition: opacity 0.5s ease-in-out; /* Transición suave */
+}
+
+h1:hover {
+    opacity: 0; /* Se desvanece al hacer hover */
+}
+
+/* Texto inicial */
+.introduccion, .advertencia {
+    font-size: 2rem;
+    margin: 20px;
+    color: #ffa500;
+    text-shadow: 2px 2px 5px #000;
+    transition: opacity 0.5s ease-in-out; /* Transición suave */
+}
+
+.advertencia:hover {
+    opacity: 0; /* Se desvanece al hacer hover */
+}
+
+/* Enlaces del menú */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff6347;
+    font-size: 3rem;
+}
+
+nav ul li a:hover {
+    color: #f1f1f1;
+    text-shadow: 2px 2px 5px #ff6347;
+    transition: all 0.3s ease;
+}
+
+footer {
+    font-size: 2rem;
+}
+
+/* Imagen principal */
+.imagen-principal {
+    width: 40%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;    
+    box-shadow: 10px 10px 5px #000;    
+    transition: transform 0.5s ease;
+}
+
+.imagen-principal:hover {
+    transform: scale(2); /* Escala la imagen al 200% al pasar el ratón */
+    background-image: url('/images/scary_image.jpg');    
+}

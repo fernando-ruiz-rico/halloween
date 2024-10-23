@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La noche más aterradora ha llegado... ¿te atreves a entrar?">
+    <meta name="author" content="May Calle">
+    <title>La Noche de Halloween</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Nosifer&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/effects.js" defer></script>
+</head>
+<body>
+
+    <!-- Puede no funcionar bien en navegadores modernos 
+        <audio id="ambiente-audio" src="sounds/horror-sounds.mp3" autoplay loop muted></audio> -->
+    
+    <header>
+        <h1>¡Bienvenido a la Noche de Halloween!</h1>
+        <p class="introduccion">Esta no es una página web común... Mientras exploras, ten cuidado. Algo acecha en la oscuridad...</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="decoraciones.html">Decoraciones malditas</a></li>
+            <li><a href="disfraces.html">Disfraces aterradores</a></li>
+            <li><a href="contacto.html">Contacto con el más allá</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <p class="advertencia">Si decides continuar, recuerda que este lugar está maldito. Solo los valientes sobreviven...</p>
+        <img src="images/sombra-tenebrosa.jpg" alt="Sombra tenebrosa" class="imagen-principal" id="imagen-principal" 
+        onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
+    </section>
+
+    <footer>
+        <p>© 2024 La Noche de Halloween. Todos los derechos reservados.</p>
+    </footer>   
+    
+</body>
+</html>
