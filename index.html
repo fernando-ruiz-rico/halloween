@@ -8,47 +8,59 @@
     <meta name="author" content="May Calle">
     <title>La Noche de Halloween</title>
     
+    <!-- Conexión con fuentes externas de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Nosifer&display=swap" rel="stylesheet">
     
+    <!-- Enlace al archivo CSS externo -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Enlace al archivo JavaScript externo -->
     <script src="js/effects.js" defer></script>
 </head>
 <body>
 
+    <!-- Audio de fondo que se reproduce en bucle (loop) -->
     <audio id="ambiente-audio" src="sounds/horror-sounds.mp3" loop></audio>
+    
+    <!-- Audio de risa maléfica que se reproduce al hacer clic sobre la imagen principal-->
     <audio id="risa-audio" src="sounds/risa-malefica.mp3" loop></audio>
     
+    <!-- Capa con mensaje inicial -->
     <div id="overlay">
         <h1 onclick="iniciar()">Haz clic para entrar</h1>
     </div>
 
-    <header>
+    <!-- Título principal de la página -->
+    <div id="titulo-principal">
         <h1>¡Bienvenido a la Noche de Halloween!</h1>
-    </header>
+    </div>
 
-    <nav>
+    <!-- Menú de navegación a otras secciones -->
+    <div class="navbar">
         <ul>
-            <li><a href="decoraciones.html">Decoraciones malditas</a></li>
-            <li><a href="disfraces.html">Disfraces aterradores</a></li>
-            <li><a href="contacto.html">Contacto con el más allá</a></li>
+            <li><a href="#">Decoraciones malditas</a></li>
+            <li><a href="#">Disfraces aterradores</a></li>
+            <li><a href="#">Contacto con el más allá</a></li>
         </ul>
     </nav>
 
-    <section class="advertencia">
+    <!-- Sección de advertencia para el usuario -->
+    <div class="advertencia">
         <h2>¡Advertencia!</h2>
         <p>
             Esta no es una página web común... Mientras exploras, ten cuidado. Algo acecha en la oscuridad...<br>
             Si decides continuar, recuerda que este lugar está maldito. Solo los valientes sobreviven...
         </p>
+        <!-- Imagen que cambia al pasar el cursor por encima -->
         <img src="images/sombra-tenebrosa.jpg" alt="Sombra tenebrosa" id="imagen-principal" 
              onmouseover="cambiarImagen()" onmouseout="restaurarImagen()">
-    </section>
+    </div>
 
-    <footer>
+    <div id="pie-pagina">
         <p>© 2024 La Noche de Halloween. Todos los derechos reservados.</p>
-    </footer>   
+    </div>   
     
 </body>
 </html>
